@@ -1,87 +1,80 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int* p = new int;
+	*p = 10;
+	cout << *p << endl;
+	delete p;
+
+	int* parr = new int[3];
+	delete[] parr;
+}
+
 //#include <iostream>
-//#include <cstdlib>
 //using namespace std;
 //
 //int main()
 //{
-//	cout << "Hello, world!" << endl;
-//	int* n = (int*)malloc(sizeof(int));
-//	free(n);
+//	int n = 10;
+//	const int* p1 = &n;
+//	int* const p2 = &n;
 //
-//	bool b = true;
-//	cout << b << endl; // 1
-//	b = false;
-//	cout << b << endl; // 0
+//	int m = 20;
+//	p1 = &m;
+//	//*p1 = 200;
 //
-//	int n1 = 10;
-//	int n2(20);
-//	int n3{ 30 };
-//	cout << n1 << endl;
-//	cout << n2 << endl;
-//	cout << n3 << endl;
-//
-//	int A = 10;
-//	int B = A;
-//	int& C = A;
-//	A = 20;
-//	cout << A << endl;
-//	cout << B << endl;
-//	cout << C << endl;
+//	//p2 = &n;
+//	*p2 = 100;
 //}
 
 //#include <iostream>
 //using namespace std;
 //
-//void swap1(int* a1, int* b1)
+//void Print(const char* name, int birth = 0)
 //{
-//	int data = *a1;
-//	*a1 = *b1;
-//	*b1 = data;
-//}
-//
-//void swap2(int& a2, int& b2)
-//{
-//	int data = a2;
-//	a2 = b2;
-//	b2 = data;
+//	cout << name << " / Ãâ»ý : " << birth << endl;
 //}
 //
 //int main()
 //{
-//	int a1 = 10;
-//	int b1 = 20;
-//	swap1(&a1, &b1);
-//	cout << a1 << endl;
-//	cout << b1 << endl;
-//
-//	int a2 = 10;
-//	int b2 = 20;
-//	swap2(a2, b2);
-//	cout << a2 << endl;
-//	cout << b2 << endl;
+//	Print("±è¹ÎÁö", 2004);
+//	Print("ÆÊÇÏ´Ï", 2004);
+//	Print("´Ù´Ï¿¤");
 //}
 
 //#include <iostream>
 //using namespace std;
 //
-//void print(const char* s)
+//namespace A
 //{
-//	cout << s << endl;
+//	void Print(const char* s)
+//	{
+//		cout << "Print(A) : " << s << endl;
+//	}
 //}
 //
-//void print(int n)
+//namespace B
 //{
-//	cout << n << endl;
+//	void Print(const char* s)
+//	{
+//		cout << "Print(B) : " << s << endl;
+//	}
+//	int Bn = 10;
+//	namespace BInner
+//	{
+//		int BIn = 100;
+//	}
 //}
 //
-//void print(double d)
-//{
-//	cout << d << endl;
-//}
+//using B::Print;
+//using namespace B;
 //
 //int main()
 //{
-//	print("Hello");
-//	print(15);
-//	print(3.14);
+//	A::Print("Also it diito");
+//	Print("¸»ÇØÁà Say it back");
+//	cout << Bn << endl;
+//	cout << B::BInner::BIn << endl;
 //}
