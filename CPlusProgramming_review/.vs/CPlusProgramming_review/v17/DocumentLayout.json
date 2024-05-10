@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\2024\\20241S\\CPlusProgramming\\CPlusProgramming_review\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C0049ACC-910A-49A3-B93E-4B53CEB4E1F4}|CPlusProgramming_review\\CPlusProgramming_review.vcxproj|C:\\Users\\user\\2024\\20241S\\CPlusProgramming\\CPlusProgramming_review\\CPlusProgramming_review\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C0049ACC-910A-49A3-B93E-4B53CEB4E1F4}|CPlusProgramming_review\\CPlusProgramming_review.vcxproj|solutionrelative:CPlusProgramming_review\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\2024\\20241S\\CPlusProgramming\\CPlusProgramming_review\\CPlusProgramming_review\\Main.cpp",
+              "RelativeDocumentMoniker": "CPlusProgramming_review\\Main.cpp",
+              "ToolTip": "C:\\Users\\user\\2024\\20241S\\CPlusProgramming\\CPlusProgramming_review\\CPlusProgramming_review\\Main.cpp",
+              "RelativeToolTip": "CPlusProgramming_review\\Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-10T13:58:42.663Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
