@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\2024\\20241S\\CPlusProgramming\\CPlusProgramming_240522\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15ED4377-115D-49EC-A705-9B4127E48459}|CPlusProgramming_240522\\CPlusProgramming_240522.vcxproj|C:\\Users\\user\\2024\\20241S\\CPlusProgramming\\CPlusProgramming_240522\\CPlusProgramming_240522\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{15ED4377-115D-49EC-A705-9B4127E48459}|CPlusProgramming_240522\\CPlusProgramming_240522.vcxproj|solutionrelative:CPlusProgramming_240522\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\2024\\20241S\\CPlusProgramming\\CPlusProgramming_240522\\CPlusProgramming_240522\\Main.cpp",
+              "RelativeDocumentMoniker": "CPlusProgramming_240522\\Main.cpp",
+              "ToolTip": "C:\\Users\\user\\2024\\20241S\\CPlusProgramming\\CPlusProgramming_240522\\CPlusProgramming_240522\\Main.cpp",
+              "RelativeToolTip": "CPlusProgramming_240522\\Main.cpp",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAMAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-21T23:59:52.804Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

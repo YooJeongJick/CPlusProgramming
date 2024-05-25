@@ -2,49 +2,37 @@
 #include <string>
 using namespace std;
 
-class Person {
-protected:
+class Shape {
 	string name;
-	int age;
-public:
-	Person(string n, int a) : name(n), age(a) {}
-	void Print() {
-		cout << "ÀÌ¸§ : " << name << endl;
-		cout << "³ªÀÌ : " << age << endl;
-		cout << endl;
+public :
+	Shape(const string& n) : name(n) {
 	}
+	
+	virtual ~Shape() {
+		cout << "~Shape()" << endl;
+	}
+
+	virtual void Draw() const = 0;
 };
 
-class Student : public Person {
-	string school;
-public:
-	Student(string n, int a, string s) : Person(n, a), school(s) {}
-	void Print() {
-		cout << "ÀÌ¸§ : " << name << endl;
-		cout << "³ªÀÌ : " << age << endl;
-		cout << "ÇÐ±³ : " << school << endl;
-		cout << endl;
+class Rect : public Shape {
+	int x, y, width, height;
+public :
+	Rect(const string& n, int x, int y, int w, int h) : Shape(n), x(x), y(y), height(h), width(w) {
 	}
-};
 
-class Idol : public Person {
-	string group;
-public:
-	Idol(const string& n, int a, string g) : Person(n, a), group(g) {}
-	void Print() const {
-		cout << "ÀÌ¸§ : " << name << endl;
-		cout << "³ªÀÌ : " << age << endl;
-		cout << "¼Ò¼Ó : " << group << endl;
-		cout << endl;
+	~Rect() {
+		cout << "~Rect()" << endl;
+	}
+
+	void Draw() const {
+		cout << "Rect::Draw()" << endl;
 	}
 };
 
 int main()
 {
-	Person p1("±è¹ÎÁö", 21);
-	p1.Print();
-	Student s1("Å´¹ÎÁã", 17, "ÇÑ¸²¿¹°í");
-	s1.Print();
-	Idol i1("¹ÎÁö", 19, "´ºÁø½º");
-	i1.Print();
+	Shape* s = new Rect("³×¸ðÀÇ²Þ", 10, 10, 100, 100);
+	s->Draw();
+	delete s;
 }
