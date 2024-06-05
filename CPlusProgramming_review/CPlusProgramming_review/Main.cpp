@@ -3,30 +3,30 @@ using namespace std;
 
 class Point {
 	int x, y;
-public :
-	Point(int _x = 0, int _y = 0) : x(_x), y(_y) {};
+public:
+	Point(int _x = 0, int _y = 0) : x(_x), y(_y) {}
+	void Print() const { cout << x << ", " << y << endl; }
 
-	const Point operator+(const Point& arg) const
+	const Point& operator=(const Point& arg)
 	{
-		return Point(x + arg.x, y + arg.y);
-	}
-	bool operator==(const Point& arg) const
-	{
-		return x == arg.x && y == arg.y;
-	}
-	bool operator!=(const Point& arg) const
-	{
-		return !(*this == arg);
-	}
-	const Point&  operator++()
-	{
-		++x;
-		++y;
+		x = arg.x;
+		y = arg.y;
+		return *this;
+		//return Point(x = arg.x, y = arg.y);
 	}
 };
+
 int main()
 {
-	Point p1(3, 4);
+	Point p1(1, 1);
 	Point p2;
-	p2 = ++p1;
+	Point p3;
+
+	p3 = p2 = p1;
+	p2.Print();
+	p3.Print();
+	// p3 = p2.operator=(p1);
+	
+	//p3 = p1 + p2
+	//p3 = p1.operator(p2);
 }
