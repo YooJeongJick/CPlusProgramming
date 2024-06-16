@@ -1,32 +1,16 @@
 #include <iostream>
 using namespace std;
+template <typename T1, typename T2>
 
-class Point {
-	int x, y;
-public:
-	Point(int _x = 0, int _y = 0) : x(_x), y(_y) {}
-	void Print() const { cout << x << ", " << y << endl; }
-
-	const Point& operator=(const Point& arg)
-	{
-		x = arg.x;
-		y = arg.y;
-		return *this;
-		//return Point(x = arg.x, y = arg.y);
-	}
-};
+void Print(T1 t1, T2 t2) 
+{
+	cout << t1 << endl;
+	cout << t2 << endl;
+	cout << endl;
+}
 
 int main()
 {
-	Point p1(1, 1);
-	Point p2;
-	Point p3;
-
-	p3 = p2 = p1;
-	p2.Print();
-	p3.Print();
-	// p3 = p2.operator=(p1);
-	
-	//p3 = p1 + p2
-	//p3 = p1.operator(p2);
+	Print(3.14, 88);
+	Print("NO PAIN, NO GAIN", 1);
 }
